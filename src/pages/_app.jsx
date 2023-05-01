@@ -12,9 +12,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>
-          asasaCommit - Open-source Git client fasasasr macOS minimalists
-        </title>
+        <title>Unindústria</title>
         <meta
           name="description"
           content="Commit is a lightweight Git client you can open from anywhere any time you’re ready to commit your work with a single keyboard shortcut. It’s fast, beautiful, and completely unnecessary."

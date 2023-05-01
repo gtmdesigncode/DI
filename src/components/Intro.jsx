@@ -3,7 +3,20 @@ import Link from 'next/link'
 import { IconLink } from '@/components/IconLink'
 import { Logo } from '@/components/Logo'
 // import { SignUpForm } from '@/components/SignUpForm'
-
+function FilmIcon(props) {
+  return (
+    // <svg viewBox="0 0 16 16" aria-hidden="true" fill="currentColor" >
+    <svg
+      fill="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      {...props}
+    >
+      <path d="M4.5 4.5a3 3 0 00-3 3v9a3 3 0 003 3h8.25a3 3 0 003-3v-9a3 3 0 00-3-3H4.5zM19.94 18.75l-2.69-2.69V7.94l2.69-2.69c.944-.945 2.56-.276 2.56 1.06v11.38c0 1.336-1.616 2.005-2.56 1.06z"></path>
+    </svg>
+  )
+}
 function BookIcon(props) {
   return (
     <svg viewBox="0 0 16 16" aria-hidden="true" fill="currentColor" {...props}>
@@ -68,13 +81,10 @@ export function Intro() {
       {/* <SignUpForm /> */}
       <div className="mt-8 flex flex-wrap justify-center gap-x-1 gap-y-3 sm:gap-x-2 lg:justify-start">
         <IconLink href="#" icon={BookIcon} className="flex-none">
-          Documentation
+          Roteiro do curso EaD
         </IconLink>
-        <IconLink href="#" icon={GitHubIcon} className="flex-none">
-          GitHub
-        </IconLink>
-        <IconLink href="/rss/feed.xml" icon={FeedIcon} className="flex-none">
-          RSS
+        <IconLink href="#" icon={FilmIcon} className="flex-none">
+          Roteiro do vídeo
         </IconLink>
       </div>
     </>
@@ -84,7 +94,7 @@ export function Intro() {
 export function IntroFooter() {
   return (
     <p className="flex items-baseline gap-x-2 text-[0.8125rem]/6 text-gray-500">
-      Apresentado por{' '}
+      Candidato{' '}
       <IconLink href="#" icon={BoltIcon} compact large>
         Guilherme Teles da Mota
       </IconLink>
