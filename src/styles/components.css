@@ -1,0 +1,9 @@
+@import './typography.css';
+@tailwind components;
+
+.st0 {
+  fill: #ffc316;
+}
+.st1 {
+  fill: #ffffff;
+}

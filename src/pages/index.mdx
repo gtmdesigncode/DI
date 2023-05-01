@@ -1,0 +1,87 @@
+import { SparkleIcon } from '@/components/SparkleIcon'
+import { generateRssFeed } from '@/lib/generateRssFeed'
+import { MdxLink } from '@/components/MdxLink'
+import { BookIcon } from '@/components/BookIcon'
+
+export async function getStaticProps() {
+  if (process.env.NODE_ENV === 'production') {
+    await generateRssFeed()
+  }
+  return { props: {} }
+}
+
+---
+
+![](@/images/commit-suggestions.png)
+
+## Design Instrucional {{ date: 'Design Instrucional' }}
+
+In the latest release, I've added support for commit message and description suggestions via an integration with OpenAI. Commit looks at all of your changes, and feeds that into the machine with a bit of prompt-tuning to get back a commit message that does a surprisingly good job at describing the intent of your changes.
+
+It's also been a pretty helpful way to remind myself what the hell I was working on at the end of the day yesterday when I get back to my computer and realize I didn't commit any of my work.
+
+### <SparkleIcon /> Arquivos
+
+<MdxLink href="#" icon={BookIcon} className="-ml-2">
+  Roteiro de vídeo promocional 1min
+</MdxLink>
+<MdxLink href="#" icon={BookIcon} className="-ml-2">
+  Storyboard do curso
+</MdxLink>
+<MdxLink href="#" icon={BookIcon} className="-ml-2">
+  Matriz de aprendizagem
+</MdxLink>
+<MdxLink href="#" icon={BookIcon} className="-ml-2">
+  Plano de curso
+</MdxLink>
+
+---
+
+![](@/images/commit-suggestions.png)
+
+## Design Gráfico {{ date: 'Design Gráfico' }}
+
+In the latest release, I've added support for commit message and description suggestions via an integration with OpenAI. Commit looks at all of your changes, and feeds that into the machine with a bit of prompt-tuning to get back a commit message that does a surprisingly good job at describing the intent of your changes.
+
+It's also been a pretty helpful way to remind myself what the hell I was working on at the end of the day yesterday when I get back to my computer and realize I didn't commit any of my work.
+
+### <SparkleIcon /> Arquivos
+
+- Added commit message and description suggestions powered by OpenAI
+- Fixed race condition that could sometimes leave you in a broken rebase state
+- Improved active project detection to try and ignore file changes triggered by the system instead of the user
+- Fixed bug that sometimes reported the wrong number of changed files
+
+---
+
+![](@/images/commit-suggestions.png)
+
+## Diagramação {{ date: 'Diagramação' }}
+
+In the latest release, I've added support for commit message and description suggestions via an integration with OpenAI. Commit looks at all of your changes, and feeds that into the machine with a bit of prompt-tuning to get back a commit message that does a surprisingly good job at describing the intent of your changes.
+
+It's also been a pretty helpful way to remind myself what the hell I was working on at the end of the day yesterday when I get back to my computer and realize I didn't commit any of my work.
+
+### <SparkleIcon /> Arquivos
+
+- Added commit message and description suggestions powered by OpenAI
+- Fixed race condition that could sometimes leave you in a broken rebase state
+- Improved active project detection to try and ignore file changes triggered by the system instead of the user
+- Fixed bug that sometimes reported the wrong number of changed files
+
+---
+
+![](@/images/commit-suggestions.png)
+
+## Implementação Rise {{ date: 'Implementação Rise' }}
+
+In the latest release, I've added support for commit message and description suggestions via an integration with OpenAI. Commit looks at all of your changes, and feeds that into the machine with a bit of prompt-tuning to get back a commit message that does a surprisingly good job at describing the intent of your changes.
+
+It's also been a pretty helpful way to remind myself what the hell I was working on at the end of the day yesterday when I get back to my computer and realize I didn't commit any of my work.
+
+### <SparkleIcon /> Arquivos
+
+- Added commit message and description suggestions powered by OpenAI
+- Fixed race condition that could sometimes leave you in a broken rebase state
+- Improved active project detection to try and ignore file changes triggered by the system instead of the user
+- Fixed bug that sometimes reported the wrong number of changed files
