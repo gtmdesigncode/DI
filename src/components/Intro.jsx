@@ -73,17 +73,28 @@ export function Intro() {
       </h1>
 
       <p className="mt-4 text-sm/6 text-gray-300">
-        Apresentação do case de criação do Roteiro de vídeo e Storyboard do
-        curso no Power Point. Além disso aproveitei a oportunidade para mostrar
-        outras competências que também podem vir a ser úteis no ambiente de
-        criação de cursos online.
+        Apresentação do case de criação do Roteiro de vídeo e Roteiro do curso
+        EaD "Viver de aprender". Foi criado além dos roteiros, o próprio curso
+        no Rise 360 utilizando-se a opção de Microlearning, que se adequa tanto
+        pelo tela-a-tela quanto pela duração (indicado para cursos curtos).
       </p>
       {/* <SignUpForm /> */}
       <div className="mt-8 flex flex-wrap justify-center gap-x-1 gap-y-3 sm:gap-x-2 lg:justify-start">
-        <IconLink href="#" icon={BookIcon} className="flex-none">
+        <IconLink
+          href="https://drive.google.com/file/d/16z2ytk8UsjhECtlfsUJ529BNKy77umvM/view?usp=share_link"
+          icon={BookIcon}
+          className="flex-none"
+          download
+        >
           Roteiro do curso EaD
         </IconLink>
-        <IconLink href="#" icon={FilmIcon} className="flex-none">
+        <IconLink
+          href="https://docs.google.com/document/d/1BNjJWU6C3k9qEI_1aaBjs60_zc2mVYDt/edit?usp=share_link&ouid=114017724779525206978&rtpof=true&sd=true"
+          target="_blank"
+          download
+          icon={FilmIcon}
+          className="flex-none"
+        >
           Roteiro do vídeo
         </IconLink>
       </div>
