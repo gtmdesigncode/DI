@@ -74,8 +74,8 @@ export function Intro() {
 
       <p className="mt-4 text-sm/6 text-gray-300">
         Apresentação do case de criação do Roteiro de vídeo e Roteiro do curso
-        EaD "Viver de aprender". Foi criado além dos roteiros, o próprio curso
-        no Rise 360 utilizando-se a opção de Microlearning, que se adequa tanto
+        EaD Viver de aprender. Foi criado além dos roteiros, o próprio curso no
+        Rise 360 utilizando-se a opção de Microlearning, que se adequa tanto
         pelo tela-a-tela quanto pela duração (indicado para cursos curtos).
       </p>
       {/* <SignUpForm /> */}
